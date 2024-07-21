@@ -10,7 +10,6 @@ class ApiServices {
     Response response = await http.get(uri);
     if(response.statusCode==200)
     {
-      print("------------api called--------------------");
       return response.body;
     }
     return null;
